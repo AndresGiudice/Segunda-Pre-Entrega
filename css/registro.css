@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+.navbar{
+    padding: 2rem;
+ }
+ 
+ .navbar-collapse{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-area{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.row.single-form{
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5); 
+    background: #fff;
+}
+
+.left{
+    background: linear-gradient(to top, #F02AA6, #FF6F48);
+    padding: 201px 93px;
+}
+
+.left h2{
+     font-family: "Plus Jakarta Sans", sans-serif;
+    color: #fff; 
+    font-weight: 700;
+    font-size: 48px; 
+}
+
+.left h2 span{
+    font-weight: 100;
+}
+
+.right{
+    padding: 110px 100px; 
+    position: relative;
+}
+
+.right i{
+    position: absolute;
+    font-size: 80px;
+    left: -27px; 
+    top: 40%; 
+    color: #fff; 
+}
+
+.form-control{
+    border: 2px solid #000; 
+}
+
+.right button{
+    border: none; 
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer; 
+}
+
+.right button:hover{
+    background: linear-gradient(to top, #F02AA6, #FF6F48);
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    height: 100px;
+    background-color: #13183F ;
+}
+
+footer button{
+    color: #F74780; 
+    background-color: white;
+    filter: none;
+    border: none;
+    width: 110px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to top, #F02AA6, #FF6F48);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 28px;
+    border: none;
+}
+
+#footer__logoFooter{
+    width: 180px;
+    height: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .right i{
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+
+}
+
+@media (max-width: 767px){
+    .left{
+        padding: 90px 15px;
+        text-align: center;
+    }
+    .left h2{
+        font-size: 25px;
+    }
+    .right{
+        padding: 25px;
+    }
+    .right i{
+        top:-52px;
+        transform: rotate(90deg);
+        left: 45%;
+    }
+    .right button{
+        width: 150px;
+        padding: 12px 0;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none; 
+    }
+ 
+}

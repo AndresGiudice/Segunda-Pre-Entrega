@@ -1,51 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Developer Academy - Contacto</title>
 </head>
 <body>
 
-    <header class="encabezado">
-        <img class="encabezado__logoPrincipal" src="../assets/Logo.svg" alt="imagen del logo principal">
-    <nav class="encabezado__navegador">
-      <ul class="encabezado__navegador__lista">
-        <li><a href="../index.html"> Home </li> </a>
-        <li><a href="./cursos.html">Cursos</li> </a>
-        <li><a href="./comunidad.html">Comunidad</li> </a>
-        <li><a href="./paraEmpresas.html">Para Empresas</li> </a>
-        <li><a href="./nosotros.html"> Nosotros </li> </a>
-      </ul>
-    </nav>
-      <button class="encabezado__boton"> <a href="./pages/contacto.html"> Registrate </a> </button>
-    </header>
-
-    <main>
-
-        <p>Completa el siguiente formulario para obtener información sobre nuestros cursos</p>
-
-        <form action="#" autocomplete="off">
-
-            <input type="text" name="nombre"
-            placeholder="Ingresa tu nombre"
-            class="campo">
-
-            <input type="email" name="email"
-            placeholder="Ingresa tu correo"
-            class="campo">
-
-            <textarea name="mensaje" placeholder="Mensaje"></textarea>
-
-            <input type="submit" name="enviar"
-            value="enviar mensaje" class="btn-enviar">
-        </form>
-      
+<header>
+ 
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <div class="container">
+                                                                    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                                              
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#"> 
+                <img src="../assets/Logo.svg" width="180" alt="Logo de la pagina web">
+            </a>
+         
+            <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"  target="blank">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cursos.html"  target="blank">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comunidad.html"  target="blank">Comunidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paraEmpresas.html"  target="blank">Para Empresas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html"  target="blank">Nosotros</a>
+              </li>
 
 
-    </main>
+            </ul>
     
+          </div>
+        </div>
+      </nav>
+
+</header>
+
+<main>
+
+  <div class="form-area"> 
+    <div class="container">
+        <div class="row single-form g-0">
+            <div class="col-sm-12 col-lg-6">
+              <div class="left">
+                <h2><span>Escribenos</span><br>Para Más Información</h2>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="right">
+                  <i class="fa fa-caret-left"> </i>
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Tu nombre</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Dirección de 
+                          Email</label>
+                        <input type="email" class="form-control" id="exampleInputPassword1">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mensaje 
+                          </label>
+                        <textarea class="form-control" id="exampleInputPassword1">
+                         </textarea>
+
+                     
+                      </div>
+
+
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                  </i>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+                
+
+
+
+  
+</main>
+
+
+<footer>
+    <img id="footer__logoFooter" src="../assets/logo footer.svg" alt="logo-footer">
+    <button id="footer__boton"> Registrate </button>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
-</html>
